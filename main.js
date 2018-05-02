@@ -23,9 +23,17 @@ function listCheckboxChange() {
     )
 }
 function run () {
-    console.log("run");
+    //  console.log("run");
+    var activeElements = list.getActiveElements();
+    if (activeElements.length > 0) {
+        var randomNumber = Math.random() * (activeElements.length - 1);
+        var randomIndex = Math.round(randomNumber);
+        alert("сегодня будем хавать " + activeElements[randomIndex].name)
+    }
+    else {
+        alert("Ничего не выбрано")
+    }
 }
-
 addHandlerBySelector(".j-show-all", "click", showAll);
 addHandlerBySelector(".j-run", "click", run);
 
@@ -55,6 +63,7 @@ list.onAdd=function(index, element) {
         list.appendChild(li)
     }
 }
+
 
 list.add ("борщ")
 list.add ("грибной")
