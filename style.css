@@ -1,0 +1,29 @@
+.container {
+    width: 320px;
+    margin: 0 auto;
+    background: #e8e8e8;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+.button-wrapper {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.button-wrapper_button{
+    margin: 0 5px;
+}
+.caption {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.list-wrapper {
+    display: none;
+
+}
+.list-wrapper__active {
+    display: block;
+}
