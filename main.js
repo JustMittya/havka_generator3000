@@ -34,8 +34,12 @@ function run () {
         alert("Ничего не выбрано")
     }
 }
+function quest () {
+    alert("Разгадай закадку: U 3.14 door...")
+}
 addHandlerBySelector(".j-show-all", "click", showAll);
 addHandlerBySelector(".j-run", "click", run);
+addHandlerBySelector(".j-leha", "click", quest);
 
 list.onAdd=function(index, element) {
     var
